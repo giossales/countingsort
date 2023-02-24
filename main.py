@@ -1,8 +1,8 @@
 def main() -> None:
-    input1: list = [5, 18, 11, 11, 15, 19, 12, 18]
-    input2: list = [12, 5, 1, 7, 11, 50, 9, 14, 15, 12]
-    print(f"{counting_sort(input1)} (Sorted: {is_sorted(input1)})")
-    print(f"{counting_sort(input2)} (Sorted: {is_sorted(input2)})")
+    lst = eval(input())
+    #input1: list = [5, 18, 11, 11, 15, 19, 12, 18]
+    #input2: list = [12, 5, 1, 7, 11, 50, 9, 14, 15, 12]
+    print(f"{counting_sort(lst)} (Sorted: {is_sorted(lst)})")
 
 def maior(x: list) -> int:
     m: int = x[0]
@@ -29,7 +29,6 @@ def is_sorted(arr: list) -> bool:
         if arr[i] > arr[i+1]:
             return False
     return True
-
 
 if __name__ == "__main__":
     main()
